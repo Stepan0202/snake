@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SNAKE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+		  <div class="startWindow">
+    <div class="startButton">
+      <img src="img/let_S.png" alt="S">
+      <div class="welcome">
+        Welcome to<br>
+        Wanna be Snake
+      </div>
+    </div>
+  </div>
+		<div id="gameBlock"> <!-- Всё поле игры -->
+    <div id="level"> Level: <span>0</span> </div> <!-- Текущий уровень -->
+    <div id="score"> Count: <span>0</span> </div> <!-- Счет -->
+    <div id="gameplayBlock"> <!-- Поле игрового геймплея -->
+        <!-- 25 квадратов = игровое поле -->
+        <div class="square">0 <!-- Голова змеи -->
+        </div> 
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+        <div class="square">4</div>
+        <div class="square">5</div> <!-- Тело змеи -->
+        <div class="square">6</div>
+        <div class="square">7</div>
+        <div class="square">8</div> <!-- Еда -->
+        <div class="square">9</div>
+        <div class="square">10</div>
+        <div class="square">11</div>
+        <div class="square">12</div>
+        <div class="square">13</div>
+        <div class="square">14</div>
+        <div class="square">15</div>
+        <div class="square">16</div>
+        <div class="square">17</div>
+        <div class="square">18</div>
+        <div class="square">19</div> <!-- Еда -->
+        <div class="square">20</div>
+        <div class="square">21</div>
+        <div class="square">22</div>
+        <div class="square">23</div>
+        <div class="square">24</div>
+    </div>
+</div>
+		<section class="end">
+    <p class="end__message">Game over!</p>
+    <div class="end__stats">
+        <p class="end__count">Your count is:</p>
+		<div class="numbers numbers_count">
+			<div class="end__numImg"><img src="img/numbers/0.png" alt=""></div>
+			<div class="end__numImg"><img src="img/numbers/0.png" alt=""></div>
+			<div class="end__numImg"><img src="img/numbers/0.png" alt=""></div>
+		</div>
+        <p class="end__isWin">Levels left to win:</p>
+        <div class="numbers numbers_lvl">
+			<div class="end__numImg"><img src="img/numbers/0.png" alt=""></div>
+			<div class="end__numImg"><img src="img/numbers/0.png" alt=""></div>
+			<div class="end__numImg"><img src="img/numbers/0.png" alt=""></div>
+		</div>
+    </div>
+    <div class="end__footer">
+        <button class="end__restartButton">play again</button>
+        <div class="end__social">
+            <p>Like it? Share it:</p>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+</section>
+	<script src="js/script.js"></script>
+</body>
+</html>

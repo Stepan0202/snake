@@ -1,0 +1,40 @@
+.startWindow {
+  width: 280px;
+  height: 240px;
+  background: #000;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 40px;
+  border-radius: 5px;
+  position: absolute;
+  left: calc(50vw - 140px);
+  z-index: 1;
+}
+
+.startButton {
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/level-0.png);
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.startButton:hover {
+  border: 2px solid #29E75E;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.startButton img {
+  margin-top: 28px;
+  margin-left: 80px;
+}
+
+.welcome {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 1.3em;
+}

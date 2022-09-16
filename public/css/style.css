@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Rota Regular";
+  font-style: normal;
+  src: url(../fonts/Rota-Regular.otf), url(../fonts/Rota-Regular.woff), url(../fonts/Rota-Regular.ttf);
+}
+@font-face {
+  font-family: "Rota Black";
+  src: url(../fonts/Rota-Black.otf), url(../fonts/Rota-Black.woff), url(../fonts/Rota-Regular.ttf);
+}
+.startWindow {
+  width: 280px;
+  height: 240px;
+  background: #000;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 40px;
+  border-radius: 5px;
+  position: absolute;
+  left: calc(50vw - 140px);
+  z-index: 1;
+}
+
+.startButton {
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/level-0.png);
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.startButton:hover {
+  border: 2px solid #29E75E;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.startButton img {
+  margin-top: 28px;
+  margin-left: 80px;
+}
+
+.welcome {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 1.3em;
+}
+
+body {
+  font-family: "Rota Regular";
+  color: #FFF;
+  background-color: rgba(8, 8, 15, 0.3215686275);
+  transition: all 0.1s linear;
+}
+
+#gameBlock {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #08080F;
+  margin: 0px auto;
+  padding: 5%;
+  position: relative;
+  top: 50px;
+}
+
+#gameplayBlock {
+  width: 476px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+}
+
+/*Элементы интерфейса:*/
+#level {
+  width: 120px;
+  color: white;
+  position: relative;
+  margin: 0px auto;
+  top: 55px;
+  font-size: 25px;
+}
+
+#score {
+  font-size: 17px;
+  width: 120px;
+  color: white;
+  left: 10px;
+  position: relative;
+}
+
+/*Общие параметры для всех квадратов*/
+.square, .square_head, .square_body, .square_food {
+  height: 72px;
+  width: 72px;
+  background: #9999E6;
+  opacity: 0.1;
+  border: 4px solid #08080F;
+  transition: all 0.2s linear;
+}
+
+/*Змея*/
+.square_head, .square_body {
+  background: #29E75E;
+  opacity: 1;
+}
+
+/*Голова*/
+.square_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background: #108130;
+}
+
+/*Глаза змеи*/
+.eyes {
+  background: black;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin-top: 10px;
+  position: absolute;
+}
+
+/*Еда*/
+.square_food {
+  background: #E72929;
+  opacity: 1;
+}
+
+.end {
+  background-color: #000;
+  font-size: 2.25vw;
+  line-height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 100%;
+  padding: 0em 5vw 0.8vw 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  opacity: 9 0%;
+}
+
+.end__message {
+  font-family: "Rota Black";
+  font-size: 4.5vw;
+  line-height: 10%;
+  text-align: left;
+  width: calc(100% - 6em);
+}
+
+.end__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.end__count, .end__isWin {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.numbers {
+  display: flex;
+  gap: 1em;
+}
+
+.end__restartButton {
+  font-family: "Rota Black";
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  line-height: 120%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border: 1px solid #fff;
+  background-color: #000;
+}
+
+.end__restartButton:hover {
+  background-color: #29E75E;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.1em #29E75E;
+  border-color: #000;
+}

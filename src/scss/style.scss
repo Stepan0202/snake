@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Rota Regular';
+	font-style: normal;
+	src: url(../fonts/Rota-Regular.otf),
+	url(../fonts/Rota-Regular.woff),
+	url(../fonts/Rota-Regular.ttf)
+}
+@font-face {
+	font-family: 'Rota Black';
+	src: url(../fonts/Rota-Black.otf),
+	url(../fonts/Rota-Black.woff),
+	url(../fonts/Rota-Regular.ttf)
+}
+$mainFontColor: #FFF;
+@import "start.scss";
+body{
+	font-family: 'Rota Regular';
+	color: $mainFontColor;
+	background-color: #08080f52;
+	transition: all 0.1s linear;
+}
+@import "main.scss";
+@import "end.scss";

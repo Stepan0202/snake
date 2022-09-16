@@ -1,0 +1,83 @@
+@charset "UTF-8";
+#gameBlock {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #08080F;
+  margin: 0px auto;
+  padding: 5%;
+  position: relative;
+  top: 50px;
+}
+
+#gameplayBlock {
+  width: 476px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+}
+
+/*Элементы интерфейса:*/
+#level {
+  width: 120px;
+  color: white;
+  position: relative;
+  margin: 0px auto;
+  top: 55px;
+  font-size: 25px;
+}
+
+#score {
+  font-size: 17px;
+  width: 120px;
+  color: white;
+  left: 10px;
+  position: relative;
+}
+
+/*Общие параметры для всех квадратов*/
+.square, .square_head, .square_body, .square_food {
+  height: 72px;
+  width: 72px;
+  background: #9999E6;
+  opacity: 0.1;
+  border: 4px solid #08080F;
+  transition: all 0.2s linear;
+}
+
+/*Змея*/
+.square_head, .square_body {
+  background: #29E75E;
+  opacity: 1;
+}
+
+/*Голова*/
+.square_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background: #108130;
+}
+
+/*Глаза змеи*/
+.eyes {
+  background: black;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin-top: 10px;
+  position: absolute;
+}
+
+/*Еда*/
+.square_food {
+  background: #E72929;
+  opacity: 1;
+}
