@@ -1,2 +1,2 @@
-# snake
-Snake game. Command work width Bohdan Glushko and Maksim Blyzniuk
+# Snake
+Snake game. Learn command project with Bohdan Glushko and Maksim Blyzniuk. Its based on our knoweledge about arrays and objects 
